@@ -20,7 +20,7 @@ const IndexPage = () => (
       </li>
       <li>
         <Link href="/test1/3" prefetch={false}>
-          /test1/2 (next/link prefetch=false)
+          /test1/3 (next/link prefetch=false)
         </Link>
       </li>
       <li>
@@ -37,7 +37,24 @@ const IndexPage = () => (
       </li>
       <li>
         <Link href="/test2/3" prefetch={false}>
-          /test2/2 (next/link prefetch=false)
+          /test2/3 (next/link prefetch=false)
+        </Link>
+      </li>
+      <li>
+        <strong>no settings</strong>
+      </li>
+      <li>
+        <a href="/test3/1">/test3/1 (normal link)</a>
+      </li>
+      <li>
+        <a href="/test3/105">/test3/105 error 404 (normal link)</a>
+      </li>
+      <li>
+        <Link href="/test3/2">/test3/2 (next/link)</Link>
+      </li>
+      <li>
+        <Link href="/test3/3" prefetch={false}>
+          /test3/3 (next/link prefetch=false)
         </Link>
       </li>
     </ul>
