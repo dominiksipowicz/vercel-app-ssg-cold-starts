@@ -41,6 +41,7 @@ const IndexPage = () => (
         </Link>
       </li>
     </ul>
+    <p>testing changes...</p>
   </div>
 );
 
