@@ -7,14 +7,37 @@ const IndexPage = () => (
     <h2>Links</h2>
     <ul>
       <li>
-        <a href="/1">/1 (normal link)</a>
+        <strong>dynamic = error</strong>
       </li>
       <li>
-        <Link href="/2">/2 (next/link)</Link>
+        <a href="/test1/1">/test1/1 (normal link)</a>
       </li>
       <li>
-        <Link href="/2" prefetch={false}>
-          /2 (next/link prefetch=false)
+        <a href="/test1/105">/test1/105 error 404 (normal link)</a>
+      </li>
+      <li>
+        <Link href="/test1/2">/test1/2 (next/link)</Link>
+      </li>
+      <li>
+        <Link href="/test1/3" prefetch={false}>
+          /test1/2 (next/link prefetch=false)
+        </Link>
+      </li>
+      <li>
+        <strong>dynamic = force-static</strong>
+      </li>
+      <li>
+        <a href="/test2/1">/test2/1 (normal link)</a>
+      </li>
+      <li>
+        <a href="/test2/105">/test2/105 error 404 (normal link)</a>
+      </li>
+      <li>
+        <Link href="/test2/2">/test2/2 (next/link)</Link>
+      </li>
+      <li>
+        <Link href="/test2/3" prefetch={false}>
+          /test2/2 (next/link prefetch=false)
         </Link>
       </li>
     </ul>
